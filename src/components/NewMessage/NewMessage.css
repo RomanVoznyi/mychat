@@ -1,0 +1,58 @@
+.messageForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.messageLabel {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.messageInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: seashell;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.messageInput::placeholder {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out;
+}
+
+.messageInput:focus::placeholder {
+  opacity: 0;
+}
+
+.messageSendBtn {
+  min-width: 100px;
+  padding: 5px;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(63, 81, 181);
+  cursor: pointer;
+
+  transform: scale(1);
+
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+
+.messageSendBtn:hover,
+.messageSendBtn:focus {
+  background-color: rgba(63, 81, 181, 0.8);
+  transform: scale(1.02);
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5px;
+}
+
+.users-container {
+  width: 25%;
+  height: calc(100vh - 10px);
+  padding: 10px;
+
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgb(219, 238, 255);
+}
+
+.messages-container {
+  width: 75%;
+  height: calc(100vh - 10px);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  background-color: white;
+}
+
+.title {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: lightblue;
+}

@@ -1,0 +1,62 @@
+.messages-list {
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.messages-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.messages-list::-webkit-scrollbar-thumb {
+  background-color: #3f51b5;
+  border-radius: 20px;
+  border: 1px solid azure;
+}
+
+.messages-list::-webkit-scrollbar-track {
+  background: azure;
+  border-radius: 20px;
+}
+
+.message-item {
+  display: grid;
+  grid-template-columns: 130px 130px 1fr;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.message-time {
+  padding: 2px;
+  font-style: italic;
+  font-size: 12px;
+  background-color: aliceblue;
+}
+
+.message-user {
+  min-width: max-content;
+  padding: 2px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.message {
+  flex-grow: 1;
+  padding: 5px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.ownMsg {
+  text-align: right;
+  background-color: white;
+  color: blue;
+}
+
+.otherMsg {
+  text-align: left;
+  background-color: aliceblue;
+}
